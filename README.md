@@ -6,14 +6,23 @@ and you want to hide that ip from the rest of the world, or create a load balanc
 you can start up a CPPTCP4Socket tunnel on another server, and expose that endpoint to your desired clients.
 
 eg,                                                               / Client 1
+
                                  ---Tunnel 1 (192.168.1.2:8080) {   Client 2
+                                 
                                /                                 \  Client 3
+                               
                              /
+                             
 Server (192.169.1.1:8080)  {
+
                             \
+                            
                              \                                  /  Client 4
+                             
                               ---  Tunnel 2 (192.168.1.3:8080) {   Client 5
+                              
                                                                 \  Client 6
+                                                                
                                                                 
 Have as many tunnels as you want.
 Use what ever ports you want,
