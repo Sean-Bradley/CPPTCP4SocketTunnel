@@ -9,8 +9,9 @@ and you want to hide that ip from the rest of the world, or create a load balanc
 you can start up a CPPTCP4Socket tunnel on another server, and expose that endpoint to your desired clients.
 
 
-eg,                                                               / Client 1
-
+eg,
+                                                                 / Client 1
+                                              
                                  ---Tunnel 1 (192.168.1.2:8080) {   Client 2
                                  
                                /                                 \  Client 3
@@ -18,7 +19,7 @@ eg,                                                               / Client 1
                              /
                              
 Server (192.169.1.1:8080)  {
-
+                                     
                             \
                             
                              \                                  /  Client 4
@@ -42,4 +43,7 @@ g++ TCP4Tunnel.cpp -pthread -std=c++11 -o SeansTCP4Tunnel
 to run
 
 ./SeansTCP4Tunnel [local listen port] [destination ip] [destination port]
+
+test using either the supplied tcp client in the other repository, or simply just telnet
+
 
