@@ -2,7 +2,7 @@
 
 A TCP 4 Socket Tunnel, to be used for creating multiple endpoints for a simple server or load balancing.
 
-IF you start a server using my CPPTCP4Server on one ip address,
+IF you start a socket server using my CPPMultiThreadedLowLatencyTCPSocketServer on one ip address,
 
 and you want to hide that ip from the rest of the world, or create a load balancing solution,
 
@@ -37,5 +37,9 @@ Actually, use the tunnel for what ever you want.
 
 To compile on linux
 
-g++ TCP4Tunnel.cpp -pthread -std=c++11 -o TCP4Tunnel
+g++ TCP4Tunnel.cpp -pthread -std=c++11 -o SeansTCP4Tunnel
+
+to run
+
+./SeansTCP4Tunnel [local listen port] [destination ip] [destination port]
 
