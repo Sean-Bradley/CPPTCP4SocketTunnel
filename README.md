@@ -10,6 +10,7 @@ you can start up a CPPTCP4Socket tunnel on another server, and expose that endpo
 
 
 eg,
+                                                                        
                                                                  / Client 1
                                               
                                  ---Tunnel 1 (192.168.1.2:8080) {   Client 2
